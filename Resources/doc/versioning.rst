@@ -77,17 +77,17 @@ automatically in the ``ViewHandler``.
 
 If you want to version by Accept header, you will need to do the following:
 
-#. The format listener must be enabled
+1. The format listener must be enabled
 
 See :doc:`Format Listener <format_listener>`
 
-#. The client must pass the requested version in his header like this :
+2. The client must pass the requested version in his header like this :
 
 .. code-block:: yaml
 
     Accept:application/json;version=1.0
 
-#. You must configure the possible mime types for all supported versions:
+3. You must configure the possible mime types for all supported versions:
 
 .. code-block:: yaml
 
